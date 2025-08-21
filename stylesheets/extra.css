@@ -1,0 +1,70 @@
+
+/* ====== 全局字體 ====== */
+.md-typeset {
+  font-size: 15px !important;
+  line-height: 1.6 !important;
+}
+
+/* ====== 標題縮小 + 間距 ====== */
+.md-typeset h1 {
+  font-size: 20px !important;
+  margin: 1em 0 0.6em !important;
+  font-weight: 600;
+}
+
+.md-typeset h2 {
+  font-size: 16px !important;
+  margin: 0.9em 0 0.5em !important;
+  font-weight: 600;
+}
+
+.md-typeset h3 {
+  font-size: 16px !important;
+  margin: 0.7em 0 0.4em !important;
+  font-weight: 500;
+}
+
+.md-typeset h4 {
+  font-size: 15px !important;
+  margin: 0.5em 0 0.3em !important;
+  font-weight: 500;
+}
+
+/* ====== 內文段落 ====== */
+.md-typeset p {
+  margin: 0.8em 0 !important;
+  font-size: 15px !important;
+}
+
+/* ====== 粗體字 ====== */
+.md-typeset strong {
+  font-size: 15px !important;
+  font-weight: 600;
+}
+
+/* ====== 程式碼區塊 ====== */
+.md-typeset pre code {
+  font-size: 12px !important;
+  line-height: 1.4;
+  padding: 0.4rem 0.6rem;
+  border-radius: 4px;
+}
+.md-typeset code {
+  font-size: 12px !important;
+  padding: 0.15em 0.3em;
+}
+
+/* ====== 側邊目錄 ====== */
+.md-nav {
+  font-size: 13px !important;
+  line-height: 1.4 !important;
+}
+
+/* ====== 頁面底部加空間 ====== */
+.md-content {
+  padding-bottom: 4rem !important;   /* 給內文和 footer 多一點距離 */
+}
+
+.md-main__inner {
+  margin-bottom: 4rem !important;    /* 保險再加一層 */
+}
