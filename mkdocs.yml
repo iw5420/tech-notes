@@ -1,4 +1,6 @@
-site_name: The Way of the Architect - Ian's Journey
+site_name: tech-notes
+site_url: https://iw5420.github.io/tech-notes/
+site_author: Ian Wang
 
 theme:
   name: material
@@ -6,36 +8,39 @@ theme:
   features:
     - navigation.expand
     - navigation.sections
+    - navigation.instant
+    - navigation.top
     - toc.integrate
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
   palette:
     - scheme: default
-      primary: indigo
-      accent: indigo
+      primary: indigo    # 主色調 (可改 blue, teal, pink, amber, cyan...)
+      accent: amber      # 強調色 (按鈕、超連結)
       toggle:
         icon: material/weather-night
-        name: 切換到夜間模式
+        name: 深色模式
     - scheme: slate
       primary: indigo
-      accent: indigo
+      accent: amber
       toggle:
         icon: material/weather-sunny
-        name: 切換到白天模式
+        name: 淺色模式
+  font:
+    text: "Noto Sans TC"
+    code: "Fira Code"
 
 plugins:
   - search
-  - tags
+  - glightbox   # 圖片點擊放大
+  - tags        # 標籤功能
 
-markdown_extensions:
-  - attr_list
-  - md_in_html
-
-extra_css:
-  - stylesheets/extra.css
-
-nav:
-  - 技術文章目錄:
-      - Plan:
-          - 三年雲端 + 大數據 + 架構師進化計畫: plan/3year_architect_plan.md
-          - 量身訂做建議（37 歲，6 年 Java 後端工程師）: plan/architect_customized_analysis.md
-      - Tools:
-          - .md檔案轉html小工具: tools/md2blogger-guide.md
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/iw5420
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/yi-en-wang-36083b35/
