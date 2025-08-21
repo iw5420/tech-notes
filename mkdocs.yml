@@ -1,4 +1,4 @@
-site_name: tech-notes
+site_name: Tech Notes 
 site_url: https://iw5420.github.io/tech-notes/
 site_author: Ian Wang
 
@@ -18,14 +18,14 @@ theme:
     - content.tabs.link
   palette:
     - scheme: default
-      primary: indigo    # 主色調 (可改 blue, teal, pink, amber, cyan...)
-      accent: amber      # 強調色 (按鈕、超連結)
+      primary: indigo   # 主色：知識感的靛藍
+      accent: cyan      # 強調色：清爽的青色
       toggle:
         icon: material/weather-night
         name: 深色模式
     - scheme: slate
       primary: indigo
-      accent: amber
+      accent: cyan
       toggle:
         icon: material/weather-sunny
         name: 淺色模式
@@ -35,8 +35,8 @@ theme:
 
 plugins:
   - search
-  - glightbox   # 圖片點擊放大
-  - tags        # 標籤功能
+  - glightbox
+  - tags
 
 extra:
   social:
@@ -44,3 +44,6 @@ extra:
       link: https://github.com/iw5420
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/yi-en-wang-36083b35/
+
+extra_css:
+  - stylesheets/extra.css   # 這裡引入你的自訂CSS
