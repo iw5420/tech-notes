@@ -1,0 +1,41 @@
+site_name: The Way of the Architect - Ian's Journey
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.expand
+    - navigation.sections
+    - toc.integrate
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: 切換到夜間模式
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: 切換到白天模式
+
+plugins:
+  - search
+  - tags
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - 技術文章目錄:
+      - Plan:
+          - 三年雲端 + 大數據 + 架構師進化計畫: plan/3year_architect_plan.md
+          - 量身訂做建議（37 歲，6 年 Java 後端工程師）: plan/architect_customized_analysis.md
+      - Tools:
+          - .md檔案轉html小工具: tools/md2blogger-guide.md

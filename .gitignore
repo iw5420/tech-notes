@@ -1,0 +1,29 @@
+# Python 編譯產物
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 環境設定
+.env
+.venv/
+venv/
+ENV/
+
+# MkDocs 輸出目錄（自動生成，不要放到 git）
+site/
+
+# 安裝的套件（pip install -r requirements.txt 會再生）
+*.egg-info/
+dist/
+build/
+
+# 系統檔案
+.DS_Store
+Thumbs.db
+
+# VSCode / IDE 設定檔（如果你用 VSCode）
+.vscode/
+.idea/
+
+# 日誌
+*.log
