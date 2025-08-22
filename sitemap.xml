@@ -11,6 +11,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://iw5420.github.io/tech-notes/DDD/exam_DDD_microservices/</loc>
+         <lastmod>2025-08-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://iw5420.github.io/tech-notes/plan/3year_architect_plan/</loc>
          <lastmod>2025-08-22</lastmod>
          <changefreq>daily</changefreq>
