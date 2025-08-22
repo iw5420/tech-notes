@@ -10,13 +10,13 @@
         <meta name="author" content="Ian Wang">
       
       
-        <link rel="canonical" href="https://iw5420.github.io/tech-notes/plan/3year_architect_plan/">
+        <link rel="canonical" href="https://iw5420.github.io/tech-notes/DDD/ddd_repo_and_example/">
       
       
-        <link rel="prev" href="../../DDD/ddd_repo_and_example/">
+        <link rel="prev" href="../..">
       
       
-        <link rel="next" href="../architect_customized_analysis/">
+        <link rel="next" href="../../plan/3year_architect_plan/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>三年雲端 + 大數據 + 架構師進化計畫 - Tech Notes</title>
+        <title>為什麼要用 DDD？— 從 Service 邏輯到聚合根的思維轉換（完整版） - Tech Notes</title>
       
     
     
@@ -87,7 +87,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#ddd-service" class="md-skip">
           跳转至
         </a>
       
@@ -123,7 +123,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              三年雲端 + 大數據 + 架構師進化計畫
+              為什麼要用 DDD？— 從 Service 邏輯到聚合根的思維轉換（完整版）
             
           </span>
         </div>
@@ -263,76 +263,6 @@
       
   
   
-  
-  
-    
-    
-    
-      
-        
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
-            
-  
-  <span class="md-ellipsis">
-    DDD
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2">
-            <span class="md-nav__icon md-icon"></span>
-            DDD
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../DDD/ddd_repo_and_example/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    為什麼要用 DDD？— 從 Service 邏輯到聚合根的思維轉換（完整版）
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
     
   
   
@@ -350,24 +280,24 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
-    Plan
+    DDD
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            Plan
+            DDD
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -391,7 +321,7 @@
           
   
   <span class="md-ellipsis">
-    三年雲端 + 大數據 + 架構師進化計畫
+    為什麼要用 DDD？— 從 Service 邏輯到聚合根的思維轉換（完整版）
   </span>
   
 
@@ -402,7 +332,7 @@
         
   
   <span class="md-ellipsis">
-    三年雲端 + 大數據 + 架構師進化計畫
+    為什麼要用 DDD？— 從 Service 邏輯到聚合根的思維轉換（完整版）
   </span>
   
 
@@ -424,72 +354,171 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      基本設定
+      一、常見疑問
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#service-heavy" class="md-nav__link">
+    <span class="md-ellipsis">
+      二、傳統 Service-heavy 的問題
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ddd-aggregate" class="md-nav__link">
+    <span class="md-ellipsis">
+      三、DDD Aggregate 的好處（重點）
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vs" class="md-nav__link">
+    <span class="md-ellipsis">
+      四、豐血模型 vs 常見誤用
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、豐血模型 vs 常見誤用">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#jpa-entity" class="md-nav__link">
+    <span class="md-ellipsis">
+      ❌ 把業務邏輯塞進 JPA @Entity（誤用示例）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#domain-model-persistence-entity" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ 較佳做法：Domain Model 與 Persistence Entity 分離
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      五、Repository 應該在哪裡用？（關鍵補充）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="五、Repository 應該在哪裡用？（關鍵補充）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#application-service-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ 應用服務（Application Service）使用 Repository
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#domain-model-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      ❌ Domain Model（聚合/實體）不要使用 Repository
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      六、範例：考生提交答案（完整落地）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="六、範例：考生提交答案（完整落地）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-domainexam" class="md-nav__link">
+    <span class="md-ellipsis">
+      1) Domain：Exam 聚合（聚合根管理狀態與規則）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      2) Repository 介面（以聚合為單位存取）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-application-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      3) Application Service（協調用例）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-db" class="md-nav__link">
+    <span class="md-ellipsis">
+      4) 單元測試（無需 DB）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      🎯 核心原則
+      七、反模式清單（避免掉坑）
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#06" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      📅 第 0–6 個月：基礎強化 + 語言補充
+      八、落地建議（從單體到微服務）
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#612" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      📅 第 6–12 個月：雲端 + 分散式實戰
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#1218" class="md-nav__link">
-    <span class="md-ellipsis">
-      📅 第 12–18 個月：大數據核心能力
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#1824" class="md-nav__link">
-    <span class="md-ellipsis">
-      📅 第 18–24 個月：雲端數據平台整合
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2430" class="md-nav__link">
-    <span class="md-ellipsis">
-      📅 第 24–30 個月：專案領導 &amp; 真實平台
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3036" class="md-nav__link">
-    <span class="md-ellipsis">
-      📅 第 30–36 個月：定位雲端數據架構師
+      九、總結
     </span>
   </a>
   
@@ -504,6 +533,55 @@
 
               
             
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Plan
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Plan
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
               
                 
   
@@ -511,7 +589,28 @@
   
   
     <li class="md-nav__item">
-      <a href="../architect_customized_analysis/" class="md-nav__link">
+      <a href="../../plan/3year_architect_plan/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    三年雲端 + 大數據 + 架構師進化計畫
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plan/architect_customized_analysis/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -615,176 +714,238 @@
               <article class="md-content__inner md-typeset">
                 
                   
-  
-<nav class="md-tags" >
-  
-    
-    
-    
-      <span class="md-tag">Java</span>
-    
-  
-    
-    
-    
-      <span class="md-tag">Python</span>
-    
-  
-    
-    
-    
-      <span class="md-tag">Backend</span>
-    
-  
-    
-    
-    
-      <span class="md-tag">Big Data</span>
-    
-  
-    
-    
-    
-      <span class="md-tag">Cloud</span>
-    
-  
-    
-    
-    
-      <span class="md-tag">Plan</span>
-    
-  
-</nav>
 
 
-
-<h1 id="_1">🚀 三年雲端 + 大數據 + 架構師進化計畫</h1>
-<h2 id="_2">基本設定</h2>
-<ul>
-<li>年齡：37 歲</li>
-<li>背景：6 年 Java 後端工程師</li>
-<li>目標：3 年內成為「雲端後端 + 大數據 + 架構師」</li>
-<li>語言補充：Python（資料工程 / ETL）、Go（高效能服務）</li>
-</ul>
+<h1 id="ddd-service">為什麼要用 DDD？— 從 Service 邏輯到聚合根的思維轉換（完整版）</h1>
+<blockquote>
+<p>目的：補齊「Repository 應該在哪裡用？」與「範例：考生提交答案」等關鍵細節，作為可直接落地的技術筆記。</p>
+</blockquote>
 <hr />
-<h2 id="_3">🎯 核心原則</h2>
+<h2 id="_1">一、常見疑問</h2>
+<p>第一次接觸 DDD（Domain-Driven Design）時，常見疑問：</p>
+<blockquote>
+<p>「那不就是把 Service 的邏輯搬到 Entity 裡嗎？幹嘛那麼麻煩？」</p>
+</blockquote>
+<p>DDD 的價值不在於「程式碼搬到哪一層」，而在於 <strong>長期治理大型系統</strong>：邊界清晰、一致性集中、測試容易、語言與模型對齊。</p>
+<hr />
+<h2 id="service-heavy">二、傳統 Service-heavy 的問題</h2>
+<p>典型三層（Controller → Service → Repository）的常見痛點：
+- <strong>胖 Service</strong>：方法動輒數百行、到處 if/else。
+- <strong>貧血模型</strong>：Entity 只有 getter/setter。
+- <strong>耦合擴散</strong>：規則散在多個 Service；修改要動很多地方。
+- <strong>測試困難</strong>：多靠整合測試，單元測試價值不高。</p>
+<hr />
+<h2 id="ddd-aggregate">三、DDD Aggregate 的好處（重點）</h2>
 <ol>
-<li><strong>專注主線</strong>：不要分散時間，集中在「雲端 + 架構 + 數據工程」。</li>
-<li><strong>領導力與架構輸出</strong>：三年內要有「帶領專案 / 跨部門影響力」的經驗。</li>
-<li><strong>證照輔助</strong>：AWS/GCP 證照是 HR 篩選的重要關鍵字。</li>
-<li><strong>減少非必要學習</strong>：Go、ML 僅做基礎認識，不作為職涯主線。</li>
+<li><strong>一致性集中</strong>：所有規則進入 <strong>Aggregate Root</strong>（例如 <code>Exam</code>），外部只能透過 Root 操作子實體（<code>Answer</code>、<code>ExamKind</code>）。  </li>
+<li><strong>邊界清晰</strong>：跨聚合互動走應用服務 / API，而非直接改對方資料。  </li>
+<li><strong>瘦 Service</strong>：Service 做用例編排、交易控制，不寫複雜規則。  </li>
+<li><strong>易測試</strong>：規則在 Domain，<strong>無 DB</strong> 就能寫單元測試。  </li>
+<li><strong>語言對齊</strong>：<code>exam.submitAnswer()</code>、<code>exam.finish()</code> 這類 API 可讀性更高。</li>
 </ol>
 <hr />
-<h2 id="06">📅 第 0–6 個月：基礎強化 + 語言補充</h2>
+<h2 id="vs">四、豐血模型 vs 常見誤用</h2>
+<h3 id="jpa-entity">❌ 把業務邏輯塞進 JPA <code>@Entity</code>（誤用示例）</h3>
+<pre><code class="language-java">@Entity
+@Table(name = &quot;answer&quot;)
+public class AnswerEntity {
+  @Id Long id;
+  String questionNumber;
+  String answer;
+
+  public void validate() {
+    if (answer == null || answer.isBlank()) throw new IllegalStateException(&quot;答案不可為空&quot;);
+  }
+}
+</code></pre>
+<p>問題：把<strong>持久化</strong>（ORM 約束）與<strong>業務規則</strong>混在同一類別，耦合大、測試難。</p>
+<h3 id="domain-model-persistence-entity">✅ 較佳做法：Domain Model 與 Persistence Entity 分離</h3>
+<p><strong>Domain Model（純業務，不依賴 JPA）</strong></p>
+<pre><code class="language-java">public class Answer {
+  private final String questionNumber;
+  private String answer;
+
+  public Answer(String questionNumber, String answer) {
+    changeAnswerInternal(answer);
+    this.questionNumber = questionNumber;
+  }
+
+  public void changeAnswer(String newAnswer) {
+    changeAnswerInternal(newAnswer);
+  }
+
+  private void changeAnswerInternal(String v) {
+    if (v == null || v.isBlank()) throw new IllegalArgumentException(&quot;答案不可為空&quot;);
+    this.answer = v;
+  }
+
+  public String getQuestionNumber() { return questionNumber; }
+  public String getAnswer() { return answer; }
+}
+</code></pre>
+<p><strong>Persistence Entity（資料庫映射）</strong></p>
+<pre><code class="language-java">@Entity
+@Table(name = &quot;answer&quot;)
+public class AnswerEntity {
+  @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+  Long id;
+
+  @Column(name=&quot;question_number&quot;) String questionNumber;
+  @Column(name=&quot;answer&quot;) String answer;
+
+  protected AnswerEntity() {} // for JPA
+
+  public static AnswerEntity fromDomain(Answer d) {
+    AnswerEntity e = new AnswerEntity();
+    e.questionNumber = d.getQuestionNumber();
+    e.answer = d.getAnswer();
+    return e;
+  }
+
+  public Answer toDomain() {
+    return new Answer(questionNumber, answer);
+  }
+}
+</code></pre>
+<hr />
+<h2 id="repository">五、Repository 應該在哪裡用？（關鍵補充）</h2>
+<h3 id="application-service-repository">✅ 應用服務（Application Service）使用 Repository</h3>
 <ul>
-<li><strong>後端 / 架構</strong>  </li>
-<li>系統設計基礎：《System Design Interview》  </li>
-<li>專案：Java + Spring Boot + Redis + Kafka → 微服務 Demo  </li>
-<li><strong>Python（資料工程必備）</strong>  </li>
-<li>Pandas / SQLAlchemy  </li>
-<li>專案：Log 分析 → 報表  </li>
-<li><strong>Go（選修，高效能服務）</strong>  </li>
-<li>goroutines / channels  </li>
-<li>專案：Go REST API（CRUD + JWT）  </li>
-<li><strong>雲端基礎</strong>  </li>
-<li>部署 Java 專案到 GCP/AWS（Cloud Run / ECS）  </li>
-<li>證照：AWS Solutions Architect – Associate  </li>
+<li>從 Repository <strong>載入聚合根</strong> → 呼叫聚合方法執行規則 → <strong>保存聚合根</strong>。</li>
+<li>Application Service 負責用例編排、交易邊界（<code>@Transactional</code>）、權限、整合外部系統。</li>
+</ul>
+<h3 id="domain-model-repository">❌ Domain Model（聚合/實體）不要使用 Repository</h3>
+<ul>
+<li>Domain 專注規則，不關心資料存哪裡。</li>
+<li>若 Domain 直接注入 Repository，會讓規則與持久化耦合，測試也會變慢、變難。</li>
+</ul>
+<blockquote>
+<p>一句話：<strong>Domain 管規則、Service 管協調、Repository 管存取</strong>。</p>
+</blockquote>
+<hr />
+<h2 id="_2">六、範例：考生提交答案（完整落地）</h2>
+<h3 id="1-domainexam">1) Domain：<code>Exam</code> 聚合（聚合根管理狀態與規則）</h3>
+<pre><code class="language-java">public enum ExamStatus { NOT_STARTED, IN_PROGRESS, FINISHED }
+
+public class Exam {
+  private ExamStatus status = ExamStatus.NOT_STARTED;
+  private final List&lt;Answer&gt; answers = new ArrayList&lt;&gt;();
+
+  public void start() {
+    if (status != ExamStatus.NOT_STARTED) throw new IllegalStateException(&quot;不能重複開始&quot;);
+    status = ExamStatus.IN_PROGRESS;
+  }
+
+  public void submitAnswer(Answer answer) {
+    if (status != ExamStatus.IN_PROGRESS) throw new IllegalStateException(&quot;未在考試中，不能提交&quot;);
+    // 可加規則：同題覆蓋、計分策略、題號驗證...
+    this.answers.add(answer);
+  }
+
+  public void finish() {
+    if (status != ExamStatus.IN_PROGRESS) throw new IllegalStateException(&quot;非進行中，無法結束&quot;);
+    status = ExamStatus.FINISHED;
+  }
+
+  public ExamStatus getStatus() { return status; }
+  public List&lt;Answer&gt; getAnswers() { return Collections.unmodifiableList(answers); }
+}
+</code></pre>
+<h3 id="2-repository">2) Repository 介面（以聚合為單位存取）</h3>
+<pre><code class="language-java">public interface ExamRepository {
+  Exam findById(String examId);
+  void save(Exam exam);
+}
+</code></pre>
+<blockquote>
+<p>實作可用 JPA、MyBatis 或 Event Sourcing，<strong>不影響 Domain</strong>。</p>
+</blockquote>
+<h3 id="3-application-service">3) Application Service（協調用例）</h3>
+<pre><code class="language-java">@Service
+public class ExamApplicationService {
+  private final ExamRepository examRepository;
+
+  public ExamApplicationService(ExamRepository examRepository) {
+    this.examRepository = examRepository;
+  }
+
+  @Transactional
+  public void submitAnswer(String examId, Answer dto) {
+    Exam exam = examRepository.findById(examId); // 1. 載入聚合根
+    exam.submitAnswer(dto);                       // 2. 執行業務規則（由聚合負責）
+    examRepository.save(exam);                    // 3. 保存聚合根
+  }
+
+  @Transactional
+  public void startExam(String examId) {
+    Exam exam = examRepository.findById(examId);
+    exam.start();
+    examRepository.save(exam);
+  }
+
+  @Transactional
+  public void finishExam(String examId) {
+    Exam exam = examRepository.findById(examId);
+    exam.finish();
+    examRepository.save(exam);
+  }
+}
+</code></pre>
+<h3 id="4-db">4) 單元測試（無需 DB）</h3>
+<pre><code class="language-java">class ExamDomainTest {
+  @Test
+  void submit_answer_only_when_in_progress() {
+    Exam exam = new Exam();
+    exam.start();
+    exam.submitAnswer(new Answer(&quot;Q1&quot;, &quot;A&quot;));
+    assertEquals(1, exam.getAnswers().size());
+  }
+
+  @Test
+  void cannot_submit_when_not_started_or_finished() {
+    Exam notStarted = new Exam();
+    assertThrows(IllegalStateException.class,
+        () -&gt; notStarted.submitAnswer(new Answer(&quot;Q1&quot;, &quot;A&quot;)));
+
+    Exam finished = new Exam();
+    finished.start();
+    finished.finish();
+    assertThrows(IllegalStateException.class,
+        () -&gt; finished.submitAnswer(new Answer(&quot;Q1&quot;, &quot;A&quot;)));
+  }
+}
+</code></pre>
+<hr />
+<h2 id="_3">七、反模式清單（避免掉坑）</h2>
+<ul>
+<li><strong>Domain 直接注入 Repository</strong>（邏輯與持久化耦合）。  </li>
+<li><strong>跨聚合直接改資料</strong>（應透過應用服務或領域事件協作）。  </li>
+<li><strong>巨型聚合</strong>：把不需要強一致的資料硬塞同一聚合，導致鎖衝突/效能差。  </li>
+<li><strong>胖 Service</strong>：規則寫在 Service，而非聚合。  </li>
 </ul>
 <hr />
-<h2 id="612">📅 第 6–12 個月：雲端 + 分散式實戰</h2>
+<h2 id="_4">八、落地建議（從單體到微服務）</h2>
+<ol>
+<li><strong>現在</strong>：在單體內先把 Controller / Service / Domain / Repository 邊界拉清、補齊單元測試。  </li>
+<li><strong>之後</strong>：當子域流量/責任成長，<strong>再</strong>拆成微服務；Application Service 與 Domain 幾乎可原封不動抽離。  </li>
+<li><strong>資料庫策略</strong>：現階段共用同一 DB；File 走 GCS（僅存 metadata 於主 DB）。</li>
+</ol>
+<hr />
+<h2 id="_5">九、總結</h2>
 <ul>
-<li><strong>後端 / 架構</strong>  </li>
-<li>Observability（Prometheus, Grafana, Jaeger）  </li>
-<li>專案：高併發聊天室（Java + Kafka + Redis Cluster）  </li>
-<li><strong>Python</strong>  </li>
-<li>PySpark（批次處理）  </li>
-<li>專案：Kafka → PySpark → 即時統計  </li>
-<li><strong>Go</strong>  </li>
-<li>專案：高效能 Gateway（Rate Limiting / Auth）  </li>
-<li><strong>雲端進階</strong>  </li>
-<li>Kubernetes（GKE/EKS）  </li>
-<li>證照：CKA  </li>
+<li>DDD 不是「把 Service 搬到 Entity」，而是 <strong>規則回歸聚合根</strong>，讓：  </li>
+<li>Service 更瘦（用例編排）  </li>
+<li>規則集中（一致性更好）  </li>
+<li>測試更簡單（純 Domain 測試）  </li>
+<li><strong>Repository 用在 Application Service</strong>；<strong>Domain 不碰 Repository</strong>。  </li>
+<li>以「考生提交答案」為例：<strong>載入聚合 → 呼叫聚合方法 → 儲存聚合</strong>，交易邊界由應用服務掌握。</li>
 </ul>
-<hr />
-<h2 id="1218">📅 第 12–18 個月：大數據核心能力</h2>
-<ul>
-<li><strong>資料工程主線</strong>  </li>
-<li>Airflow（批次排程 &amp; ETL）  </li>
-<li>PySpark / Spark Streaming（批次 + 流處理）  </li>
-<li>專案：ETL Pipeline → S3/Kafka → Spark → BigQuery  </li>
-<li><strong>資料倉儲 &amp; 查詢</strong>  </li>
-<li>GCP BigQuery / AWS Redshift（必備技能）  </li>
-<li>OLAP 分析設計  </li>
-<li><strong>後端整合</strong>  </li>
-<li>Java Service + BigQuery API → 報表查詢 API  </li>
-<li><strong>證照</strong>  </li>
-<li>GCP Professional Data Engineer  </li>
-</ul>
-<hr />
-<h2 id="1824">📅 第 18–24 個月：雲端數據平台整合</h2>
-<ul>
-<li><strong>雲原生資料處理</strong>  </li>
-<li>GCP Dataflow (Apache Beam) / AWS Glue → 業界更愛這種雲服務  </li>
-<li><strong>數據湖基礎</strong>  </li>
-<li>Delta Lake or Apache Iceberg（取代傳統 Data Lake，業界新趨勢）  </li>
-<li><strong>後端 / 架構</strong>  </li>
-<li>學 Service Mesh（Istio/Linkerd）</li>
-<li>Java + Go 混合 → 多租戶 SaaS 架構  </li>
-<li><strong>Go（加分項）</strong>  </li>
-<li>gRPC + 分散式任務排程  </li>
-</ul>
-<hr />
-<h2 id="2430">📅 第 24–30 個月：專案領導 &amp; 真實平台</h2>
-<ul>
-<li><strong>架構實戰</strong>  </li>
-<li>領導一個「模擬電商/金融系統重構」專案  </li>
-<li>用 DDD (Domain Driven Design) 把微服務劃分清楚  </li>
-<li><strong>資料工程</strong>  </li>
-<li>整合 Data Lake + Data Warehouse  </li>
-<li>做一個 <strong>企業級 Data Platform</strong>（Kafka → Dataflow → BigQuery → API）  </li>
-<li><strong>Python</strong></li>
-<li>參與開源專案（Airflow / Flink / Spark）</li>
-<li><strong>Go</strong></li>
-<li>專案：高性能 API Gateway / Service Mesh Proxy</li>
-<li><strong>雲端</strong>  </li>
-<li>Terraform (IaC)  </li>
-<li>證照：AWS Solutions Architect – Professional  </li>
-</ul>
-<hr />
-<h2 id="3036">📅 第 30–36 個月：定位雲端數據架構師</h2>
-<ul>
-<li><strong>產出作品</strong>  </li>
-<li>Blog / GitHub：完整 Cloud Data Platform 架構分享  </li>
-<li>發布一個 ETL 工具 / Data Pipeline SDK 到 GitHub  </li>
-<li><strong>軟實力</strong>  </li>
-<li>英文系統設計文件  </li>
-<li>模擬帶 5–10 人團隊  </li>
-<li><strong>證照</strong>  </li>
-<li>GCP Professional Cloud Architect  </li>
-</ul>
-<hr />
-<h1 id="_4">🎯 最終成果</h1>
-<p>三年後，你會有：<br />
-- <strong>後端架構</strong>：Java + 分散式設計 + Observability<br />
-- <strong>大數據工程</strong>：Airflow、Spark、BigQuery、Dataflow、Data Lake<br />
-- <strong>雲端架構</strong>：AWS + GCP 證照、Kubernetes、Terraform<br />
-- <strong>加分</strong>：Go Gateway / gRPC / 高效能微服務  </p>
-<p>👉 可以應徵：<br />
-- <strong>Cloud Data Engineer</strong><br />
-- <strong>Cloud / Backend Architect</strong><br />
-- <strong>資深後端工程師（含數據平台經驗）</strong></p>
-<hr />
-<p>✅ 我幫你刪掉了 <strong>學了但對職缺幫助有限的內容</strong>（ML pipeline、Service Mesh、過度偏研究的模式）。<br />
-✅ 強化了 <strong>資料工程 + 雲原生數據處理</strong>，因為這是未來 3–5 年市場持續成長的區塊。</p>
 
 
 
 
 
 
-
-  
-  
 
 
 
