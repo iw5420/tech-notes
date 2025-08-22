@@ -1,7 +1,7 @@
 # 技術文章目錄 
 
 ## 📌 DDD
-- [為什麼要用 DDD？](plan/ddd_repo_and_example)  
+- [為什麼要用 DDD？](DDD/ddd_repo_and_example)  
   <sub>`#Java #DDD`</sub>
 
 ## 📌 Plan
