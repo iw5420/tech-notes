@@ -3,6 +3,8 @@
 ## 📌 DDD
 - [為什麼要用 DDD？](DDD/ddd_repo_and_example)  
   <sub>`#Java #DDD`</sub>
+- [領域驅動設計 (DDD) 與微服務治理實例？](DDD/exam_DDD_microservices.md)  
+  <sub>`#Java #DDD #Microservices`</sub>
 
 ## 📌 Plan
 - [三年雲端 + 大數據 + 架構師進化計畫](plan/3year_architect_plan)  
