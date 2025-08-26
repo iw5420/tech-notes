@@ -10,13 +10,13 @@
         <meta name="author" content="Ian Wang">
       
       
-        <link rel="canonical" href="https://iw5420.github.io/tech-notes/DDD/exam_DDD_microservices/">
+        <link rel="canonical" href="https://iw5420.github.io/tech-notes/plan/k8s_learn_1month_basic/">
       
       
-        <link rel="prev" href="../ddd_repo_and_example/">
+        <link rel="prev" href="../architect_customized_analysis/">
       
       
-        <link rel="next" href="../../plan/3year_cloud_mlop_architect_plan/">
+        <link rel="next" href="../../tools/md2blogger-guide/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>領域驅動設計 (DDD) 與微服務治理實例 - Tech Notes</title>
+        <title>Kubernetes 四週學習計畫 - Tech Notes</title>
       
     
     
@@ -87,7 +87,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ddd" class="md-skip">
+        <a href="#kubernetes" class="md-skip">
           跳转至
         </a>
       
@@ -123,7 +123,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              領域驅動設計 (DDD) 與微服務治理實例
+              Kubernetes 四週學習計畫
             
           </span>
         </div>
@@ -263,6 +263,97 @@
       
   
   
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    DDD
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            DDD
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DDD/ddd_repo_and_example/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    為什麼要用 DDD？
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DDD/exam_DDD_microservices/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    領域驅動設計 (DDD) 與微服務治理實例
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -280,24 +371,24 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   <span class="md-ellipsis">
-    DDD
+    Plan
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            DDD
+            Plan
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -308,11 +399,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../ddd_repo_and_example/" class="md-nav__link">
+      <a href="../3year_cloud_mlop_architect_plan/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    為什麼要用 DDD？
+    三年學習 Roadmap（Cloud + MLOps + Java 架構師）
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../architect_customized_analysis/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    量身訂做建議（37 歲，6 年 Java 後端工程師）
   </span>
   
 
@@ -342,7 +454,7 @@
           
   
   <span class="md-ellipsis">
-    領域驅動設計 (DDD) 與微服務治理實例
+    Kubernetes 四週學習計畫
   </span>
   
 
@@ -353,7 +465,7 @@
         
   
   <span class="md-ellipsis">
-    領域驅動設計 (DDD) 與微服務治理實例
+    Kubernetes 四週學習計畫
   </span>
   
 
@@ -375,166 +487,28 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#ddd_1" class="md-nav__link">
+  <a href="#1-k8s" class="md-nav__link">
     <span class="md-ellipsis">
-      一、DDD 是什麼？
+      📅 第 1 週：K8s 基礎概念 + 單機體驗
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ddd_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      二、DDD 的幾個核心概念
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="二、DDD 的幾個核心概念">
+    <nav class="md-nav" aria-label="📅 第 1 週：K8s 基礎概念 + 單機體驗">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-entity" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Entity (實體)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-value-object" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Value Object (值物件)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-aggregate" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Aggregate (聚合)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-repository" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. Repository (儲存庫)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5-service" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. Service (領域服務)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6-bounded-context" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. Bounded Context (界限上下文)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      三、從單體到微服務的演進
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="三、從單體到微服務的演進">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. 單體式架構
+      學習資源
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. 模組化單體
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. 微服務架構
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      四、專案實例：考試系統的微服務拆分
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="四、專案實例：考試系統的微服務拆分">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-candidate-service" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Candidate Service (考生服務)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-exam-service" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Exam Service (考卷服務)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-file-service" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. File Service (檔案服務)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-general-service" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. General Service (一般資料服務)
+      練習任務
     </span>
   </a>
   
@@ -546,45 +520,108 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#2-kubeadm" class="md-nav__link">
+    <span class="md-ellipsis">
+      📅 第 2 週：多機叢集 (kubeadm)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📅 第 2 週：多機叢集 (kubeadm)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      五、資料庫策略
+      學習資源
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      六、治理原則
+      練習任務
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      📅 第 3 週：應用部署 &amp; 資源管理
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📅 第 3 週：應用部署 & 資源管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      七、結論
+      學習資源
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
-      八、微服務架構圖
+      練習任務
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#erd-vs-ddd" class="md-nav__link">
+  <a href="#4" class="md-nav__link">
     <span class="md-ellipsis">
-      九、ERD VS DDD
+      📅 第 4 週：高可用 / 自動擴展 / 監控
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📅 第 4 週：高可用 / 自動擴展 / 監控">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      學習資源
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      練習任務
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      📘 推薦書籍（進階）
     </span>
   </a>
   
@@ -594,118 +631,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-      
-        
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
-            
-  
-  <span class="md-ellipsis">
-    Plan
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            Plan
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../plan/3year_cloud_mlop_architect_plan/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    三年學習 Roadmap（Cloud + MLOps + Java 架構師）
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../plan/architect_customized_analysis/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    量身訂做建議（37 歲，6 年 Java 後端工程師）
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../plan/k8s_learn_1month_basic/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Kubernetes 四週學習計畫
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -807,292 +732,107 @@
     
     
     
-      <span class="md-tag">Java</span>
-    
-  
-    
-    
-    
-      <span class="md-tag">DDD</span>
-    
-  
-    
-    
-    
-      <span class="md-tag">Microservices</span>
+      <span class="md-tag">Plan - K8s</span>
     
   
 </nav>
 
 
 
-<h1 id="ddd">領域驅動設計 (DDD) 與微服務治理實例</h1>
-<h2 id="ddd_1">一、DDD 是什麼？</h2>
-<p><strong>領域驅動設計 (Domain-Driven Design, DDD)</strong> 是一種軟體設計方法，重點在於：
-- <strong>以業務領域為核心</strong>：將系統切分為多個「領域 (Domain)」，而不是僅僅依照技術或資料庫結構來劃分。
-- <strong>強調語言一致性 (Ubiquitous Language)</strong>：開發人員與業務人員使用相同的詞彙，避免溝通落差。
-- <strong>明確的邊界 (Bounded Context)</strong>：不同領域之間界線清楚，避免耦合，彼此以介面或 API 溝通。</p>
-<p>DDD 的核心思想：  </p>
-<blockquote>
-<p><strong>程式碼結構應該反映業務邏輯，而非僅僅反映資料庫或框架。</strong></p>
-</blockquote>
+<h1 id="kubernetes">🏗️ Kubernetes 四週學習計畫</h1>
+<p>目標：從基礎 → 多機 → 部署應用 → 體驗高可用<br />
+環境：3 台 Windows + VMware Ubuntu VM  </p>
 <hr />
-<h2 id="ddd_2">二、DDD 的幾個核心概念</h2>
-<h3 id="1-entity">1. Entity (實體)</h3>
-<p>具備唯一身份標識 (ID)，生命周期長。例如：<strong>考生(Candidate)</strong>、<strong>考試(Exam)</strong>。</p>
-<h3 id="2-value-object">2. Value Object (值物件)</h3>
-<p>沒有唯一 ID，代表某種屬性組合。例如：<strong>Email 地址、完成時間</strong>。</p>
-<h3 id="3-aggregate">3. Aggregate (聚合)</h3>
-<p>由多個 Entity 和 Value Object 組合而成，形成一個整體，對外以聚合根 (Aggregate Root) 作為存取入口。
-例如：<strong>Exam 聚合</strong> = 考卷(ExamEntity) + 題目(ExamKindEntity) + 答案(AnswerEntity)。</p>
-<h3 id="4-repository">4. Repository (儲存庫)</h3>
-<p>對外提供存取聚合的介面，隱藏資料存取細節 (JPA、SQL、NoSQL)。</p>
-<h3 id="5-service">5. Service (領域服務)</h3>
-<p>封裝業務邏輯，不隸屬於某個特定 Entity。例如：<strong>建立隨機碼</strong>、<strong>考卷評分</strong>。</p>
-<h3 id="6-bounded-context">6. Bounded Context (界限上下文)</h3>
-<p>清楚定義一個領域的邊界，避免跨領域耦合。不同 Context 透過 API 或事件整合。</p>
-<hr />
-<h2 id="_1">三、從單體到微服務的演進</h2>
-<h3 id="1">1. 單體式架構</h3>
+<h2 id="1-k8s">📅 第 1 週：K8s 基礎概念 + 單機體驗</h2>
+<p>🎯 目標：理解 K8s 的組件與資源，並能在單機跑起來  </p>
+<h3 id="_1">學習資源</h3>
 <ul>
-<li>一個 Controller 包含 Candidate、Exam、Answer、File、School 等所有功能。</li>
-<li>問題：耦合過高，開發維護困難。</li>
+<li>官方文件（中文）：<a href="https://kubernetes.io/zh-cn/docs/concepts/">Kubernetes 基本概念</a>  </li>
+<li>影片：  </li>
+<li><a href="https://www.youtube.com/watch?v=X48VuDVv0do">Kubernetes Tutorial for Beginners (TechWorld with Nana)</a>  </li>
+<li><a href="https://www.youtube.com/playlist?list=PLj6h78yzYM2PZf9eA7bhWnIh_mK1vyOfU">Amos 老師 Kubernetes 新手村 (YouTube)</a>  </li>
+<li>工具：  </li>
+<li><a href="https://minikube.sigs.k8s.io/docs/start/">Minikube</a>  </li>
+<li><a href="https://rancher.com/docs/k3s/latest/en/">k3s 輕量版 Kubernetes</a>  </li>
 </ul>
-<h3 id="2">2. 模組化單體</h3>
+<h3 id="_2">練習任務</h3>
 <ul>
-<li>將程式碼依照 <strong>領域</strong> 拆分為多個模組 (Candidate, Exam, File...)。</li>
-<li>資料庫仍然共用，但程式邏輯開始有清晰邊界。</li>
-</ul>
-<h3 id="3">3. 微服務架構</h3>
-<ul>
-<li>每個 Bounded Context 變成獨立微服務。</li>
-<li>各自擁有 Repository、Service、API 層。  </li>
-<li>跨服務溝通透過 REST API 或事件。</li>
+<li>在 Ubuntu VM 安裝 minikube 或 k3s  </li>
+<li>建立 nginx Pod 與 Deployment  </li>
+<li>使用 Service 對外暴露 nginx  </li>
+<li>體驗滾動更新（修改 replicas 數量）</li>
 </ul>
 <hr />
-<h2 id="_2">四、專案實例：考試系統的微服務拆分</h2>
-<p>假設我們的系統包含：考生、考卷、題目、答案、檔案、學校等功能。<br />
-原本 Controller 內有 <strong>20 支 API 全部混在一起</strong>，維護成本高。</p>
-<p>依照 DDD 的 Bounded Context，我們可以拆成以下微服務：</p>
-<h3 id="1-candidate-service">1. Candidate Service (考生服務)</h3>
+<h2 id="2-kubeadm">📅 第 2 週：多機叢集 (kubeadm)</h2>
+<p>🎯 目標：建立一個 3 節點叢集（1 Master + 2 Worker）  </p>
+<h3 id="_3">學習資源</h3>
 <ul>
-<li><strong>核心職責</strong>：管理考生資訊與考試狀態。</li>
-<li><strong>聚合根</strong>：CandidateEntity</li>
-<li><strong>API 範例</strong>：</li>
-<li><code>POST /candidate/createRandom</code> → 建立考試隨機碼</li>
-<li><code>POST /candidate/saveFinishTime</code> → 儲存考生完成時間</li>
+<li>官方文件：<a href="https://kubernetes.io/zh-cn/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/">使用 kubeadm 建立叢集</a>  </li>
+<li>教學文章：  </li>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-create-a-kubernetes-cluster-using-kubeadm-on-ubuntu-20-04">DigitalOcean - Create a Kubernetes Cluster Using kubeadm</a>  </li>
+<li><a href="https://www.linuxtechi.com/install-kubernetes-cluster-on-ubuntu-22-04/">LinuxTechi - Install Kubernetes Cluster on Ubuntu 22.04</a>  </li>
+<li>Pod 網路：  </li>
+<li><a href="https://github.com/flannel-io/flannel#deploying-flannel-manually">Flannel</a>  </li>
+<li><a href="https://docs.tigera.io/calico/latest/getting-started/kubernetes/quickstart">Calico</a>  </li>
+</ul>
+<h3 id="_4">練習任務</h3>
+<ul>
+<li>在三台 Ubuntu VM 上安裝 kubeadm + Docker  </li>
+<li>初始化 Master 節點 (<code>kubeadm init</code>)  </li>
+<li>Worker 節點使用 <code>kubeadm join</code> 加入叢集  </li>
+<li>安裝 CNI（Flannel/Calico）  </li>
+<li>驗證 <code>kubectl get nodes</code> 三節點正常  </li>
 </ul>
 <hr />
-<h3 id="2-exam-service">2. Exam Service (考卷服務)</h3>
+<h2 id="3">📅 第 3 週：應用部署 &amp; 資源管理</h2>
+<p>🎯 目標：能在叢集上跑一個多層應用（前端 + 後端 + DB）  </p>
+<h3 id="_5">學習資源</h3>
 <ul>
-<li><strong>核心職責</strong>：管理試卷與題目。</li>
-<li><strong>聚合根</strong>：ExamEntity</li>
-<li><strong>子實體</strong>：ExamKindEntity (題目)、AnswerEntity (答案)</li>
-<li><strong>API 範例</strong>：</li>
-<li><code>POST /exam/create</code> → 建立試卷</li>
-<li><code>POST /exam/update</code> → 修改題目</li>
-<li><code>POST /exam/getAll</code> → 查詢所有考卷</li>
-<li><code>POST /answer/save</code> → 儲存考生答案</li>
+<li><a href="https://kubernetes.io/zh-cn/docs/concepts/configuration/configmap/">ConfigMap</a>  </li>
+<li><a href="https://kubernetes.io/zh-cn/docs/concepts/configuration/secret/">Secret</a>  </li>
+<li>範例應用：  </li>
+<li><a href="https://kubernetes.io/zh-cn/docs/tutorials/stateful-application/mysql-wordpress-persistent-volume/">WordPress + MySQL (官方範例)</a>  </li>
+<li><a href="https://kubernetes.io/zh-cn/docs/tutorials/stateless-application/guestbook/">Guestbook 應用</a>  </li>
+<li><a href="https://kubernetes.github.io/ingress-nginx/deploy/">ingress-nginx Controller</a>  </li>
+</ul>
+<h3 id="_6">練習任務</h3>
+<ul>
+<li>部署一個前端 + 後端 + DB 應用  </li>
+<li>使用 PVC 保存 DB 資料  </li>
+<li>使用 ConfigMap / Secret 管理設定與密碼  </li>
+<li>安裝 Ingress Controller，模擬多網站入口  </li>
 </ul>
 <hr />
-<h3 id="3-file-service">3. File Service (檔案服務)</h3>
+<h2 id="4">📅 第 4 週：高可用 / 自動擴展 / 監控</h2>
+<p>🎯 目標：模擬企業真實場景，體驗 HA 與自動擴展  </p>
+<h3 id="_7">學習資源</h3>
 <ul>
-<li><strong>核心職責</strong>：負責考生上傳的語音與圖片。</li>
-<li><strong>存儲特性</strong>：高 I/O，適合接物件儲存（GCS / S3）。</li>
-<li><strong>API 範例</strong>：</li>
-<li><code>POST /file/saveVoice</code></li>
-<li><code>GET /file/getVoice</code></li>
-<li><code>POST /file/saveImage</code></li>
-<li><code>GET /file/getImage</code></li>
+<li><a href="https://kubernetes.io/zh-cn/docs/concepts/architecture/nodes/">節點管理</a>  </li>
+<li><a href="https://kubernetes.io/zh-cn/docs/tasks/run-application/horizontal-pod-autoscale/">Horizontal Pod Autoscaler (HPA)</a>  </li>
+<li><a href="https://github.com/kubernetes-sigs/metrics-server">metrics-server</a>  </li>
+<li><a href="https://devopscube.com/setup-prometheus-monitoring-on-kubernetes/">Prometheus + Grafana 監控</a>  </li>
 </ul>
-<p>👉 與其他服務不同，這裡不進入關聯式資料庫，而是直接與 GCS/S3 溝通，僅在主資料庫存放檔案的 <strong>Metadata</strong>。</p>
-<hr />
-<h3 id="4-general-service">4. General Service (一般資料服務)</h3>
+<h3 id="_8">練習任務</h3>
 <ul>
-<li><strong>核心職責</strong>：提供基礎靜態資料。</li>
-<li><strong>子領域</strong>：學校(School)、語言(Language)</li>
-<li><strong>API 範例</strong>：</li>
-<li><code>POST /general/getAllSchool</code></li>
-<li><code>POST /general/getAllLocal</code></li>
-<li><code>GET /general/language</code></li>
+<li>模擬節點維護：<code>kubectl drain nodeX</code>  </li>
+<li>測試 Pod 自動遷移到健康節點  </li>
+<li>設定 HPA，壓測並觀察 Pod 自動擴增  </li>
+<li>部署 metrics-server，查看 Pod 資源使用  </li>
+<li>挑戰：安裝 Prometheus + Grafana  </li>
 </ul>
 <hr />
-<h2 id="_3">五、資料庫策略</h2>
+<h2 id="_9">📘 推薦書籍（進階）</h2>
 <ul>
-<li><strong>短期與中期</strong>：所有業務資料 (Candidate、Exam、Answer、General) <strong>共用同一個關聯式資料庫</strong>。  </li>
-<li><strong>File Service</strong>：檔案實體存於 <strong>GCS/S3</strong>，僅將 metadata（檔名、路徑、所屬考生 ID）存於主資料庫。  </li>
-</ul>
-<p>👉 好處：<br />
-- 減少資料庫數量，維護成本低。<br />
-- ACID transaction 仍然適用，確保資料一致性。<br />
-- 將高 I/O 的檔案分離，避免拖慢主資料庫效能。  </p>
-<hr />
-<h2 id="_4">六、治理原則</h2>
-<ol>
-<li><strong>服務內高內聚</strong>：Exam 與 Answer 放在一起。  </li>
-<li><strong>服務間低耦合</strong>：Candidate 與 Exam 分開，透過 API 溝通。  </li>
-<li><strong>共用資料庫策略</strong>：所有業務領域共用同一 DB，File Service 例外，使用物件儲存。  </li>
-<li><strong>API 分組清晰</strong>：Swagger tags 與 URL 路徑對應領域。</li>
-</ol>
-<hr />
-<h2 id="_5">七、結論</h2>
-<p>DDD 並不是一開始就要把所有服務拆到極細，而是：
-- <strong>先劃分領域 (Bounded Context)</strong>，讓程式碼結構與業務語言一致。<br />
-- <strong>再依照業務需求與流量特性</strong>，逐步把不同 Context 演進成獨立微服務。  </p>
-<p>在本專案的實例中：<br />
-- <strong>Exam + Answer → 核心微服務，共用主 DB</strong><br />
-- <strong>Candidate → 獨立服務，但仍共用主 DB</strong><br />
-- <strong>File → 獨立高 I/O 微服務，存取 GCS/S3</strong><br />
-- <strong>General → 輕量支援服務，共用主 DB</strong>  </p>
-<p>這樣設計既能保持彈性，又不會因為「表才 7 張」就過度拆分，維持平衡。</p>
-<hr />
-<h2 id="_6">八、微服務架構圖</h2>
-<pre><code class="language-mermaid">flowchart TD
-    A[API Gateway]
-
-    subgraph CoreServices
-        B[Candidate Service]
-        C[Exam Service + Answer]
-        D[General Service]
-    end
-
-    E[File Service]
-    F[(Shared Relational DB - Candidate / Exam / Answer / General)]
-    G[(Object Storage - GCS / S3)]
-
-    %% Gateway -&gt; subgraph (外部連線)
-    A --&gt; CoreServices
-    A --&gt; E
-
-    %% Subgraph -&gt; DB
-    B --&gt; F
-    C --&gt; F
-    D --&gt; F
-
-    %% File Service -&gt; GCS
-    E --&gt; G
-</code></pre>
-<hr />
-<h2 id="erd-vs-ddd">九、ERD VS DDD</h2>
-<h1 id="erd-ddd">ERD 與 DDD 聚合設計的差異</h1>
-<h2 id="_7">一、前言</h2>
-<p>在系統設計時，常見的兩種思維模式是 <strong>ERD（Entity-Relationship
-Diagram，資料庫設計圖）</strong> 與 <strong>DDD（Domain-Driven
-Design，領域驅動設計）</strong>。\
-雖然這兩者在圖形上經常長得很像，但實際上強調的觀點完全不同。</p>
-<p>本文將以考試系統的
-<code>Exam</code>（考卷）、<code>ExamKind</code>（題目）、<code>Answer</code>（答案）為例，對比 ERD 與
-DDD 的差異，並討論在何時適合使用 ERD，何時適合使用 DDD。</p>
-<hr />
-<h2 id="erd">二、ERD 的思維模式</h2>
-<h3 id="_8">著眼點</h3>
-<ul>
-<li><strong>資料結構</strong>與<strong>正規化</strong>。\</li>
-<li>目的是確保資料表之間關聯正確，避免冗餘。</li>
-</ul>
-<h3 id="_9">表現方式</h3>
-<ul>
-<li>一張主表：<code>Exam</code>\</li>
-<li>兩張附表：<code>ExamKind</code>（題目）、<code>Answer</code>（答案）\</li>
-<li>關聯透過外鍵維持：<ul>
-<li><code>ExamKind.exam_id -&gt; Exam.id</code>\</li>
-<li><code>Answer.exam_id -&gt; Exam.id</code></li>
-</ul>
-</li>
-</ul>
-<h3 id="_10">特點</h3>
-<ul>
-<li>強調資料如何被 <strong>儲存</strong>。\</li>
-<li>誰都能直接查或修改子表。\</li>
-<li>常用 JOIN 查詢跨表資料。</li>
-</ul>
-<h3 id="_11">適用情境</h3>
-<ul>
-<li>以 <strong>資料管理為核心</strong> 的系統：報表、資料倉儲、後台管理工具。\</li>
-<li>例子：學校資料庫（學生表、課程表、成績表），以查詢和報表統計為主要需求。</li>
+<li>《Kubernetes in Action》  </li>
+<li>《The Kubernetes Book》  </li>
+<li>《Production Kubernetes》  </li>
 </ul>
 <hr />
-<h2 id="ddd_3">三、DDD 的思維模式</h2>
-<h3 id="_12">著眼點</h3>
-<ul>
-<li><strong>業務邊界</strong>與<strong>一致性規則</strong>。\</li>
-<li>目的是確保系統操作符合業務語意，而不是僅僅修改資料。</li>
-</ul>
-<h3 id="_13">聚合設計</h3>
-<ul>
-<li>
-<p><strong>聚合根 (Aggregate Root)</strong>：<code>ExamEntity</code></p>
-<ul>
-<li>唯一入口，負責考試整體邏輯。\</li>
-</ul>
-</li>
-<li>
-<p><strong>子實體 (Entity)</strong>：</p>
-<ul>
-<li><code>ExamKindEntity</code>（題目）\</li>
-<li><code>AnswerEntity</code>（答案）\</li>
-</ul>
-</li>
-<li>
-<p>所有修改必須透過 <code>ExamEntity</code>：</p>
-<p><code>java
-exam.addAnswer(new Answer(...));
-examService.save(exam);</code></p>
-</li>
-</ul>
-<h3 id="_14">特點</h3>
-<ul>
-<li>強調誰能修改誰。\</li>
-<li>子實體不能獨立存在，必須依附於聚合根。\</li>
-<li><strong>不建議跨聚合直接操作或 JOIN</strong>，而是透過應用服務 / API 協作。</li>
-</ul>
-<h3 id="_15">適用情境</h3>
-<ul>
-<li>業務邏輯複雜，需要 <strong>封裝規則</strong>、<strong>確保一致性</strong>。\</li>
-<li>例子：考試系統（考卷 Exam 聚合，包含題目和答案），需要控制：<ul>
-<li>考試狀態（未開始、進行中、完成）。\</li>
-<li>考生是否允許修改答案。\</li>
-<li>成績計算與驗證。</li>
-</ul>
-</li>
-</ul>
-<hr />
-<h2 id="_16">四、範例比較</h2>
-<p>面向       ERD 思維                     DDD 聚合思維</p>
-<hr />
-<p>著眼點     資料結構、表設計             業務邊界、一致性
-  誰能操作   任何人直接查/改子表          只能透過聚合根 (ExamEntity)
-  主要手段   外鍵、JOIN                   方法封裝 (exam.addAnswer)
-  驅動邏輯   資料正規化                   業務規則
-  適用情境   報表、資料倉儲、簡單 CRUD    複雜業務邏輯、狀態控制
-  實例       <code>Answer.exam_id = Exam.id</code>   <code>exam.addAnswer(answer)</code></p>
-<hr />
-<h2 id="erd-ddd_1">五、何時用 ERD，何時用 DDD？</h2>
-<h3 id="erd_1">選擇 ERD 的時機</h3>
-<ul>
-<li>系統以 <strong>資料正確儲存與查詢</strong> 為主要目的。\</li>
-<li>資料邏輯簡單，幾乎沒有跨表的業務規則。\</li>
-<li>例如：學生成績系統，主要需求是匯出報表，邏輯只依賴 SQL JOIN。</li>
-</ul>
-<h3 id="ddd_4">選擇 DDD 的時機</h3>
-<ul>
-<li>系統以 <strong>業務操作與一致性</strong> 為主要目的。\</li>
-<li>涉及流程控制、狀態轉換、業務規則。\</li>
-<li>例如：考試系統，必須保證「只能在考試進行中提交答案」，「完成後不能修改答案」。</li>
-</ul>
-<hr />
-<h2 id="_17">六、結論</h2>
-<ul>
-<li><strong>ERD</strong>：偏向 <strong>資料庫設計</strong>，適合確保資料儲存正確。\</li>
-<li><strong>DDD 聚合</strong>：偏向 <strong>業務建模</strong>，適合確保操作符合領域規則。\</li>
-<li>兩者並不衝突，而是 <strong>不同層面的抽象</strong>。<ul>
-<li>ERD → 關心「資料表如何關聯」。\</li>
-<li>DDD → 關心「業務邏輯如何封裝」。</li>
-</ul>
-</li>
-</ul>
-<p>在實務上，<strong>你可以先用 ERD 設計資料表，再用 DDD 定義業務邊界</strong>。\
-最終，資料庫只是「儲存的技術細節」，而 DDD 才是「業務語意的保證」。</p>
+<p>✅ <strong>最後成果</strong><br />
+- 建立一個 <strong>3 節點 K8s 叢集</strong><br />
+- 能部署多層應用並對外提供服務<br />
+- 能操作滾動更新、Pod 調度、故障模擬<br />
+- 熟悉 HPA、自動擴展、基本監控  </p>
 
 
 

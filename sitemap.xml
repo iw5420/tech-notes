@@ -2,32 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://iw5420.github.io/tech-notes/</loc>
-         <lastmod>2025-08-22</lastmod>
+         <lastmod>2025-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://iw5420.github.io/tech-notes/DDD/ddd_repo_and_example/</loc>
-         <lastmod>2025-08-22</lastmod>
+         <lastmod>2025-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://iw5420.github.io/tech-notes/DDD/exam_DDD_microservices/</loc>
-         <lastmod>2025-08-22</lastmod>
+         <lastmod>2025-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://iw5420.github.io/tech-notes/plan/3year_architect_plan/</loc>
-         <lastmod>2025-08-22</lastmod>
+         <loc>https://iw5420.github.io/tech-notes/plan/3year_cloud_mlop_architect_plan/</loc>
+         <lastmod>2025-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://iw5420.github.io/tech-notes/plan/architect_customized_analysis/</loc>
-         <lastmod>2025-08-22</lastmod>
+         <lastmod>2025-08-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://iw5420.github.io/tech-notes/plan/k8s_learn_1month_basic/</loc>
+         <lastmod>2025-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://iw5420.github.io/tech-notes/tools/md2blogger-guide/</loc>
-         <lastmod>2025-08-22</lastmod>
+         <lastmod>2025-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
