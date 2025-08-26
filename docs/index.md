@@ -12,7 +12,8 @@
 
 - [量身訂做建議（37 歲，6 年 Java 後端工程師）](plan/architect_customized_analysis)  
   <sub>`#Plan`</sub>
-
+- [AI 平台工程師技能圖譜](plan/ai_platform_engineer_skillmap)  
+  <sub>`#Plan#Cloud#MLOps#Java#Architect#Plan`</sub>
 - [k8s一個月進修計畫](plan/k8s_learn_1month_basic)  
   <sub>`#Plan #k8s`</sub>
 
