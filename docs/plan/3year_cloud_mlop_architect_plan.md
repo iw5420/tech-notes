@@ -104,7 +104,23 @@ tags:
   - GCP Professional Cloud Architect（或 AWS 同級別）
 - **作品集**
   - **Side Project 6**：AI SaaS Mini Platform（多租戶 + API 金流 + 壓測報告）
-  - GitHub + Blog 發布完整架構文章
+
+- **技術品牌輸出（新增）**
+  - 在 GitHub + Blog 發布完整架構文章
+  - 在 Medium / LinkedIn 發布英文技術文章（1–2 篇）
+  - 若時間允許，可釋出一個小型開源工具（如 MLFlow Helper 或 K8s Dashboard）
+
+---
+
+## 🔹 37 個月後：面試準備期（新增）
+- **系統設計題準備**
+  - Grokking the System Design Interview
+  - 模擬面試（Mock Interview, Pramp）
+- **演算法題基礎**
+  - LeetCode 50–80 題（Python 為主，避免 coding round 掛掉）
+- **模擬面試 / 求職**
+  - 投遞履歷，針對 Cloud Architect / MLOps Engineer 職缺進行 mock interview
+  - 重點練習行為面試（Behavioral Questions）
 
 ---
 
@@ -112,4 +128,6 @@ tags:
 - **Cloud 架構師能力**：K8s, Terraform, Observability, Service Mesh, DDD, 雲端證照（AWS/GCP）
 - **MLOps 能力**：MLFlow, Kubeflow, Triton, ONNX, TensorRT, Ray/Horovod
 - **作品集**：語音 API Demo → MLOps Pipeline → 高併發 Serving → 分散式訓練 → AI SaaS 平台
+- **技術品牌**：Blog、GitHub、英文文章、開源工具
 - **定位**：可同時應徵 Cloud/Backend Architect（穩定兜底）與 MLOps / AI 平台工程師（高薪進攻）
+- **面試準備**：系統設計 + LeetCode 基礎題，確保轉職成功
