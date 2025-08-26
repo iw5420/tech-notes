@@ -7,11 +7,14 @@
   <sub>`#Java #DDD #Microservices`</sub>
 
 ## 📌 Plan
-- [三年雲端 + 大數據 + 架構師進化計畫](plan/3year_architect_plan)  
-  <sub>`#Java #Python #Backend #BigData #Cloud #Plan`</sub>
+- [三年雲端 + MLOPS + 架構師進化計畫](plan/3year_cloud_mlop_architect_plan)  
+  <sub>`#Java #Python #Backend #MLOPS #Cloud #Plan`</sub>
 
 - [量身訂做建議（37 歲，6 年 Java 後端工程師）](plan/architect_customized_analysis)  
   <sub>`#Plan`</sub>
+
+- [k8s一個月進修計畫](plan/k8s_learn_1month_basic)  
+  <sub>`#Plan #k8s`</sub>
 
 ---
 

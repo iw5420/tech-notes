@@ -3,76 +3,74 @@ title: 量身訂做建議（37 歲，6 年 Java 後端工程師）
 tags:
   - Plan
 ---
+
 # 🎯 量身訂做建議（37 歲，6 年 Java 後端工程師）
 
-## 1️⃣ 先看你的條件
+## 1️⃣ 條件檢視
 
 ### 年齡 37
-- 屬於「中高年資」工程師，履歷上的 **深度 / 系統設計能力** 會比「語言多寡」更重要。
+- 屬於「中高年資」工程師，履歷上 **架構深度 / 團隊影響力** 比「語言數量」更能加分。
 
 ### 6 年 Java 後端
-- 代表你在 **Spring Boot、資料庫、API 設計** 已經有成熟經驗。
-- 面試中 **能否畫出完整架構圖、講清楚 trade-off** 比「再多會一個語言」更有價值。
+- 已有 **Spring Boot、資料庫、API 設計** 穩固基礎。  
+- 接下來要展現的是 **雲端化、分散式系統、MLOps 平台整合** 的能力。
 
-### 補充 Python、Go
-- **Python**：加強 **資料工程 / ETL / 大數據** → 這個很合理。
-- **Go**：如果有時間可以學，但 **不是必須**，除非你鎖定公司（K8s / Gateway / infra-heavy）會用到。
+### Python（必補）、Go（可選）
+- **Python**：作為 MLOps 主力語言（FastAPI、MLFlow、Kubeflow、模型部署）。  
+- **Go**：非必須，除非未來團隊有 API Gateway / Infra-heavy 需求，否則可以先放掉。
 
 ---
 
-## 2️⃣ 剛剛三年計畫的檢討
+## 2️⃣ 舊計畫檢討
 
 ### 優點
-- 有把 **Java → 架構師 + Python → 資料工程 + 雲端證照** 串起來。
-- 最後能同時應徵 **Cloud Data Engineer / Backend Architect**。
+- 強調了 Java 架構、雲端、證照，這些都是你轉型的基礎。  
 
-### 不足之處
-- 對 **年資較高的人**，學太多「基礎技能」容易浪費時間（像 ML、Service Mesh）。
-- 應該更強調「**架構設計 / 團隊領導 / 大型系統經驗**」，這些才是 37 歲工程師跳槽薪資的關鍵。
+### 不足
+- 舊版偏向 **Data Engineer 線**（Airflow、Spark、BigQuery），但你已經決定不走這條路。  
+- **MLOps / AI 平台** 幾乎沒被涵蓋，會讓你錯過高薪成長區。  
+- 缺少 **作品集 / Side Project** 的落地實戰，這對 3 年後的履歷很關鍵。
 
 ---
 
-## 3️⃣ 我建議的「優化方向」
+## 3️⃣ 優化方向
 
-### (a) 技能投資重點（別再分太散）
-- **主線必修**：
-  - Java + 系統設計 → 架構師必備
-  - 雲端（AWS/GCP）+ Kubernetes → 現代架構師標配
-  - 數據平台（Airflow / Spark / BigQuery or Redshift）→ 補足大數據能力
+### (a) 技能投資重點
+- **主線必修**  
+  - Java + 系統設計 → 架構師必備  
+  - Kubernetes + Terraform + Observability → Cloud Architect 標配  
+  - MLOps 工具鏈（MLFlow / Kubeflow / Triton / ONNX / TensorRT）  
+  - 分散式訓練（Ray / Horovod）  
 
-- **選修加分（時間有限可跳過）**：
-  - Go：若未來公司做 **API Gateway / 高併發 infra** 再投資
-  - ML / TensorFlow：不是你的職涯主線，可以捨棄
+- **選修加分**  
+  - Go → 可跳過，非必要  
+  - Spark / BigQuery → 僅需概念，不做主線  
 
 ### (b) 領導力 & 架構輸出
-- 三年內，**一定要有帶領團隊 or 牽頭專案的經驗**，否則履歷只會像「資深後端」，很難轉「架構師」。
-
-- 具體做法：
-  - 主動推一個 **跨部門專案**（例如：從單體轉微服務，或建置資料平台）。
-  - 寫技術方案文件（英文），在團隊中推行。
-  - **Blog / GitHub**：輸出自己的架構案例，展示影響力。
+- 三年內一定要有 **帶專案 / 技術輸出**：  
+  - 推動一次系統重構（如單體轉微服務或部署 AI Pipeline）  
+  - 技術方案文件（中英文）  
+  - GitHub/Blog → 展示 **MLOps Pipeline / 高併發模型服務**  
 
 ### (c) 證照策略
-- **第一年**：AWS Solutions Architect – Associate
-- **第二年**：CKA + GCP Professional Data Engineer
-- **第三年**：GCP Professional Cloud Architect（或 AWS Pro）
+- **第一年**：AWS Solutions Architect – Associate  
+- **第二年**：CKA + AWS/GCP ML Engineer（或 Machine Learning Specialty）  
+- **第三年**：AWS SA Professional / GCP Cloud Architect  
 
-👉 為什麼要考？  
-因為很多公司在招「雲端架構師 / 資料工程師」時，**證照是 HR 快速篩選的關鍵字**。
+👉 證照不是目的，而是 **HR 關鍵字**，讓履歷進得去。
 
 ### (d) 求職方向
-三年後的定位可以是：
-- **Cloud Data Engineer**（數據平台 + 雲端）
-- **Backend/Cloud Architect**（系統設計 + 雲端基礎建設）
-- **Tech Lead / 團隊負責人**（帶 5–10 人團隊）
+三年後定位應該是：  
+- **Backend/Cloud Architect**（兜底）  
+- **MLOps / AI Platform Engineer**（進攻，高薪新創/外商需求大）  
+- **Tech Lead / 團隊負責人**（帶 5–10 人團隊）  
 
-👉 這些職缺在台灣、新加坡、馬來西亞、新創或大型 SaaS 公司都需求很高。
+👉 台灣 → 架構師職缺多，新加坡/國際新創 → MLOps 職缺薪資高。  
 
 ---
 
 ## 4️⃣ 總結建議
-- 你不需要再學「很多語言」，把時間集中在 **雲端 + 架構 + 數據工程**。
-- **Go** 可以淺嚐，但不要壓太多時間，除非未來團隊真的需要。
-- **強調領導力 & 架構輸出**，這是你 37 歲的優勢，也是和年輕工程師的差異化。
-- 三年後，你的價值會更像「**能帶團隊的架構師 / 雲端數據專家**」，而不只是「會寫程式的工程師」。
-
+- 刪除舊計畫的 **Data Engineer 線**（Airflow、Spark、BigQuery 不再是主線）。  
+- **專注於 Cloud + MLOps 雙軌**，這才符合你背景與未來市場趨勢。  
+- **強調領導力 / 架構設計 / 作品集輸出**，這才是 37 歲工程師的核心價值。  
+- 三年後，你的定位應該是「**雲端架構師 + MLOps 平台專家**」，而不是「一般後端工程師」。  
